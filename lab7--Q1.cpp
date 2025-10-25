@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
 	
-	int i, j, numbers, sum=0;
+	int i, numbers, sum=0;
 	
 	printf("How many numbers to input? ");
 	scanf("%d", &numbers);
@@ -11,12 +11,10 @@ int main(){
 		printf("Enter number %d: ", i+1);
 		scanf("%d", &num[i]);	
 	}
-	for(i=0; i < N; i++){
-        if(count[i] > 1){
-            printf("%d ", i);
-            found = 1;
+	for(i = 0; i < numbers; i++){
+		sum = sum + num[i];
 	}
-
-	printf("The sum of numbers entered is %d", sum);
+	printf("The sum of the numbers entered is: %d", sum);
 	return 0;
 }
+
